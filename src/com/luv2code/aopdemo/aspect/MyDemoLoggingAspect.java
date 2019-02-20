@@ -11,7 +11,7 @@ public class MyDemoLoggingAspect {
 	// this is where we add all of our related advices for logging
 	
 	// let's start with @Before advice
-	@Before("execution(public void addAccount())")
+	@Before("execution(* add*())")
 	public void beforeAddAccountAdvice() {
 		
 		// add our custom code
