@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>spring-aop-pointcut-declarations-combo</name>
+	<name>spring-aop-pointcut-order-aspects</name>
 	<comment></comment>
 	<projects>
 	</projects>
