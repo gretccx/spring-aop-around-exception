@@ -16,8 +16,11 @@ public class MainDemoApp {
 		// get the bean from spring container
 		AccountDAO theAccountDAO = context.getBean("accountDAO", AccountDAO.class);
 		
-		// call the business method on that component
-		theAccountDAO.addAccount();
+		// call the business method
+		Account myAccount = new Account();
+		myAccount.setName("Madhu");
+		myAccount.setLevel("Platinum");
+		theAccountDAO.addAccount(myAccount, true);
 		
 		// call the AccountDAO getter/setter methods
 		theAccountDAO.setName("foobar");
